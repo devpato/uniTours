@@ -47,8 +47,8 @@ google.maps.event.addDomListener(window, 'load', init);
     var map;
     function init() {
         var mapOptions = {
-            center: new google.maps.LatLng(27.734607,85.664078),
-            zoom: 12,
+            center: new google.maps.LatLng(24.530356,-102.5528),
+            zoom: 5,
             zoomControl: true,
             zoomControlOptions: {
                 style: google.maps.ZoomControlStyle.DEFAULT,
@@ -139,7 +139,12 @@ google.maps.event.addDomListener(window, 'load', init);
         var mapElement = document.getElementById('map');
         var map = new google.maps.Map(mapElement, mapOptions);
         var locations = [
-['Coffee Shop', 'London', '121 1212 2121', 'info@coffee.com', 'coffee.com', 27.7236, 85.5247, 'https://mapbuildr.com/assets/img/markers/solid-pin-blue.png']
+['Mazatlan', 'Mexico', '', '', '', 23.254041, -106.411518,'https://mapbuildr.com/assets/img/markers/solid-pin-blue.png'],
+['Guadalajara', 'Mexico', 'Oficinas Unitours', ' ', 'http://unitours.net/', 20.673676, -103.394992,'https://mapbuildr.com/assets/img/markers/solid-pin-red.png'],
+['Puerto Vallarta', 'Mexico', 'PAQUETE TODO INCLUIDO', ' ', '', 20.652434, -105.222636,'https://mapbuildr.com/assets/img/markers/solid-pin-black.png'],
+['Cancun', 'Mexico', 'PAQUETE TODO INCLUIDO', ' ', '', 21.166798, -86.852402,'https://mapbuildr.com/assets/img/markers/solid-pin-orange.png'],
+['Ixtapa', 'Mexico', '', ' ', '', 17.663064, -101.587195,'https://mapbuildr.com/assets/img/markers/solid-pin-green.png'],
+['Los Cabos', 'Mexico', '', ' ', '', 23.247573, -109.762807,'https://mapbuildr.com/assets/img/markers/solid-pin-purple.png']
         ];
         for (i = 0; i < locations.length; i++) {
             if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}

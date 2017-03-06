@@ -35,10 +35,13 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 
 #head,.carousel{margin-top: 0;}
 
-#home{padding-top: 6em;}
+#home{
+	padding-top: 6em;
+	
+}
 
 /*banner*/
-.banner{position: relative;}
+.banner{position: relative; }
 .banner .caption{position: absolute;top: 0;left:0; right: 0; bottom: 0;background:rgba(0,0,0,0.4); }
 .banner .caption-wrapper{display: table;height: 100%;width: 100%;}
 .banner .caption-info{display: table-cell;vertical-align: middle;text-align: center;color: #fff;}
